@@ -9,6 +9,7 @@
   --logo-header-color: #000000;
   --team-background-color: #e5e5e5;
   --buttons-portfolio-background-color: #f5f4fa;
+  --menu-border-color: #ECECEC;
 }
 
 body {
@@ -44,8 +45,10 @@ img {
 }
 
 .container {
-  width: 1600px;
+  width: 1200px;
   padding: 0 15px;
+  margin: 0 auto;
+  align-items: center;
 }
 
 .head-two {
@@ -65,7 +68,13 @@ img {
 .main-header .navigation {
   display: flex;
   align-items: center;
+  padding-top: 24px;
 }
+
+.navigation {
+  border-bottom: 1px solid var(--menu-border-color);
+}
+
 
 /* logo */
 .logo-header {
@@ -90,7 +99,8 @@ img {
 }
 
 .navigation-mail {
-  margin-left: 371px;
+  margin-left: auto;
+  margin-right: 50px;
 }
 
 .navigation-item-link {
@@ -127,7 +137,12 @@ img {
 /* header */
 .head {
   background-color: var(--background-color);
+  margin: 0 auto;
+  width: 1200px;
+  height: 600px;
+  padding: 200px 452px;
 }
+
 
 .head-one {
   font-weight: 900;
@@ -150,7 +165,10 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
+  padding: 10px 41px;
+  margin-top: 30px;
 }
+
 /* Nasze atuty */
 
 .advantages-item-paragraph {
@@ -226,7 +244,22 @@ img {
   text-decoration: none;
 }
 
+/* Portfolio */
+.section {
+  padding: 94px 215px;
+}
+
 /* Portfolio buttons */
+
+.buttons-list {
+  display: flex;
+  justify-content: center;
+}
+
+.button-list-item:not(:last-child) {
+  margin-right: 8px;
+}
+
 .buttons-list-item-button {
   font-weight: 500;
   font-size: 16px;
@@ -238,6 +271,7 @@ img {
   box-shadow: none;
   cursor: pointer;
 }
+
 
 .buttons-list-item-button:hover,
 .buttons-list-item-button:focus {
