@@ -40,18 +40,35 @@ img {
   display: block;
 }
 
+
+
 .list {
   list-style: none;
 }
 
 .container {
-  width: 1200px;
+  width: 1170px;
   padding: 0 15px;
-  margin: 0 auto;
   align-items: center;
+  justify-content: center;
+}
+
+.section {
+  padding-bottom: 94px;
 }
 
 .head-two {
+  font-weight: 700;
+  font-size: 36px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.167;
+  text-align: center;
+  letter-spacing: 0.03em;
+  padding-bottom: 50px;
+}
+
+.head-three {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.143;
@@ -65,15 +82,20 @@ img {
 
 /* HEADER */
 
-.main-header .navigation {
-  display: flex;
-  align-items: center;
-  padding-top: 24px;
+.main-header .container {
+  width: 1600px;
 }
 
 .navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
   border-bottom: 1px solid var(--menu-border-color);
+  width: 1170px;
 }
+
 
 
 /* logo */
@@ -85,13 +107,13 @@ img {
   letter-spacing: 0.03em;
   text-decoration: none;
   margin-right: 93px;
-  margin-left: 215px;
 }
 
 /* navigation */
 .navigation-list {
   display: flex;
   align-items: center;
+  margin-right: 371px;
 }
 
 .navigation-item:not(:last-child) {
@@ -135,7 +157,7 @@ img {
 }
 
 /* header */
-.head {
+.head .container {
   background-color: var(--background-color);
   margin: 0 auto;
   width: 1600px;
@@ -157,10 +179,12 @@ img {
   width: 696px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 30px;
 }
 
+
 .button-one {
-  display:block
+  display: block;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
@@ -173,25 +197,59 @@ img {
   border-radius: 4px;
   cursor: pointer;
   padding: 10px 41px;
-  margin-top: 30px;
-  margin-left: auto;
   margin-right: auto;
+  margin-left: auto;
 }
 
+.main-content {
+  display: flex;
+  justify-content: center;
+  width: 1170px;
+}
 /* Nasze atuty */
+
+.advantages-list {
+  display: flex;
+  width: 1170px;
+  justify-content: center;
+}
+
+.advantages-item {
+  margin-top: 94px;
+}
+
+.advantages-item:not(:last-child) {
+  margin-right: 30px;
+}
 
 .advantages-item-paragraph {
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
   color: var(--second-color);
+  white-space: pre;
 }
 
 /* Czym się zajmujemy */
 
+
+
+.activities-list {
+  display: flex;
+}
+
+.activities-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 /* Nasz zespół */
-.team {
+.team .container{
   background-color: var(--team-background-color);
+  width: 1600px;
+}
+
+.team-list {
+  display: flex;
 }
 
 .team-caption {
@@ -200,6 +258,9 @@ img {
   line-height: 1.186;
   text-align: center;
   letter-spacing: 0.03em;
+  white-space: pre;
+  background-color: var(--third-color);
+  width: 270px;
 }
 
 .team-span-caption {
@@ -212,7 +273,8 @@ img {
 }
 
 /* footer */
-.foot {
+.foot .container {
+  width: 1600px;
   background-color: var(--background-color);
 }
 
@@ -254,9 +316,7 @@ img {
 }
 
 /* Portfolio */
-.section {
-  padding: 94px 215px;
-}
+
 
 /* Portfolio buttons */
 
