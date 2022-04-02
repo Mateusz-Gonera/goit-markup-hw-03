@@ -10,6 +10,7 @@
   --team-background-color: #e5e5e5;
   --buttons-portfolio-background-color: #f5f4fa;
   --menu-border-color: #ECECEC;
+  --portfolio-list-border-color: #EEE;
 }
 
 body {
@@ -53,7 +54,7 @@ img {
   justify-content: center;
 }
 
-.section {
+.section:not(:last-child) {
   padding-bottom: 94px;
 }
 
@@ -66,6 +67,7 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   padding-bottom: 50px;
+  padding-top: 94px;
 }
 
 .head-three {
@@ -243,9 +245,10 @@ img {
 }
 
 /* Nasz zespół */
-.team .container{
+.team .container {
   background-color: var(--team-background-color);
   width: 1600px;
+  padding-bottom: 94px;
 }
 
 .team-list {
@@ -283,13 +286,19 @@ img {
   background-color: var(--background-color);
 }
 
+.foot {
+}
+
 .address {
+  display: inline-block;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
   color: var(--third-color);
+  padding-left: 215px;
+  padding-bottom: 60px;
 }
 
 .address-mail,
@@ -310,6 +319,7 @@ img {
 }
 
 .logo-footer {
+  display: inline-block;
   font-family: var(--second-font);
   font-style: normal;
   font-weight: 700;
@@ -318,6 +328,12 @@ img {
   letter-spacing: 0.03em;
   color: var(--third-color);
   text-decoration: none;
+  margin-bottom: 20px;
+}
+
+.logo-footer-element {
+  padding-top: 60px;
+  padding-left: 215px;
 }
 
 /* Portfolio */
@@ -325,12 +341,19 @@ img {
 
 /* Portfolio buttons */
 
+.buttons {
+  padding-top: 94px;
+  padding-bottom: 34px;
+}
+
 .buttons-list {
   display: flex;
   justify-content: center;
 }
 
-.button-list-item:not(:last-child) {
+
+
+.buttons-list-item:not(:last-child) {
   margin-right: 8px;
 }
 
@@ -345,6 +368,8 @@ img {
   border-style: none;
   box-shadow: none;
   cursor: pointer;
+  height: 38px;
+  padding: 6px 22px;
 }
 
 
@@ -361,6 +386,26 @@ img {
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 }
+
+.images-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1170px;
+  margin-left: -30px;
+}
+
+.images-list-item {
+  flex-basis: calc(100% / 3);
+  min-width: 0;
+}
+
+
+
+.images-list-item-figure {
+  border: 1px solid var(--portfolio-list-border-color);
+  min-width: 370px;
+}
+
 .images-caption-title {
   font-weight: 700;
   font-size: 18px;
@@ -375,4 +420,5 @@ img {
   line-height: 1.875;
   letter-spacing: 0.03em;
   color: var(--second-color);
+  padding: 20px 24px;
 }
