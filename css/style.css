@@ -236,6 +236,7 @@ img {
 
 .activities-list {
   display: flex;
+  justify-content: center;
 }
 
 .activities-item:not(:last-child) {
@@ -244,16 +245,24 @@ img {
 
 /* Nasz zespół */
 .team {
+  display: flex;
   background-color: var(--team-background-color);
   width: 1600px;
   padding-bottom: 94px;
   justify-content: center;
-  margin: 0 auto;
+  margin-left: -230px;
 }
 
 .team-list {
   display: flex;
   justify-content: center;
+}
+
+.team-list-item-figure {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+  0px 1px 1px rgba(0, 0, 0, 0.14),
+  0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-caption {
@@ -390,18 +399,18 @@ img {
 
 .images {
   padding-bottom: 94px;
+  margin-left: -60px;
 }
 
 .images-list {
   display: flex;
   flex-wrap: wrap;
   width: 1170px;
-  margin-left: -30px;
 }
 
 .images-list-item {
   flex-basis: calc(100% / 3);
-  min-width: 0;
+  min-width: 370px;
 }
 
 
