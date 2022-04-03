@@ -41,6 +41,10 @@ img {
   display: block;
 }
 
+figure {
+  margin: 15px;
+}
+
 
 
 .list {
@@ -399,7 +403,7 @@ img {
 
 .images {
   padding-bottom: 94px;
-  margin-left: -60px;
+  margin-left: -45px;
 }
 
 .images-list {
