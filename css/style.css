@@ -52,6 +52,7 @@ img {
   padding: 0 15px;
   align-items: center;
   justify-content: center;
+  margin: 0 auto;
 }
 
 .section:not(:last-child) {
@@ -96,6 +97,7 @@ img {
   padding-bottom: 24px;
   border-bottom: 1px solid var(--menu-border-color);
   width: 1170px;
+  margin: 0 auto;
 }
 
 
@@ -203,11 +205,7 @@ img {
   margin-left: auto;
 }
 
-.main-content {
-  display: flex;
-  justify-content: center;
-  width: 1170px;
-}
+
 /* Nasze atuty */
 
 .advantages-list {
@@ -245,10 +243,11 @@ img {
 }
 
 /* Nasz zespół */
-.team .container {
+.team {
   background-color: var(--team-background-color);
   width: 1600px;
   padding-bottom: 94px;
+  justify-content: center;
   margin: 0 auto;
 }
 
