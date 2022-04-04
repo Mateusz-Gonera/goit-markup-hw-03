@@ -57,8 +57,9 @@ img {
   margin: 0 auto;
 }
 
-.section:not(:last-child) {
+.section {
   padding-bottom: 94px;
+  padding-top: 94px;
 }
 
 .head-two {
@@ -70,7 +71,7 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   padding-bottom: 50px;
-  padding-top: 94px;
+  
 }
 
 .head-three {
@@ -170,6 +171,10 @@ img {
   padding: 200px 452px;
 }
 
+.head {
+  padding: 0;
+}
+
 
 .head-one {
   font-weight: 900;
@@ -216,10 +221,6 @@ img {
   justify-content: center;
 }
 
-.advantages-item {
-  margin-top: 94px;
-}
-
 .advantages-item:not(:last-child) {
   margin-right: 30px;
 }
@@ -234,7 +235,9 @@ img {
 
 /* Czym się zajmujemy */
 
-
+.activities {
+  padding-top: 0;
+}
 
 .activities-list {
   display: flex;
@@ -250,7 +253,6 @@ img {
   display: flex;
   background-color: var(--team-background-color);
   width: 1600px;
-  padding-bottom: 94px;
   justify-content: center;
   margin-left: -230px;
 }
@@ -299,7 +301,9 @@ img {
 }
 
 .foot {
+  padding: 0;
 }
+
 
 .address {
   display: inline-block;
@@ -354,7 +358,6 @@ img {
 /* Portfolio buttons */
 
 .buttons {
-  padding-top: 94px;
   padding-bottom: 34px;
 }
 
@@ -400,8 +403,8 @@ img {
 }
 
 .images {
-  padding-bottom: 94px;
   margin-left: -60px;
+  padding-top: 0;
 }
 
 .images-list {
@@ -418,7 +421,6 @@ img {
 
 
 .images-list-item-figure {
-  border: 1px solid var(--portfolio-list-border-color);
   min-width: 370px;
 }
 
@@ -437,4 +439,7 @@ img {
   letter-spacing: 0.03em;
   color: var(--second-color);
   padding: 20px 24px;
+  border-right: 1px solid var(--portfolio-list-border-color);
+  border-left: 1px solid var(--portfolio-list-border-color);
+  border-bottom: 1px solid var(--portfolio-list-border-color);
 }
