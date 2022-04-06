@@ -50,10 +50,8 @@ img {
 }
 
 .container {
-  width: 1170px;
+  width: 1200px;
   padding: 0 15px;
-  align-items: center;
-  justify-content: center;
   margin: 0 auto;
 }
 
@@ -169,6 +167,7 @@ img {
   margin: 0 auto;
   width: 1600px;
   padding: 200px 452px;
+  margin-left: -15px;
 }
 
 .head {
@@ -237,6 +236,8 @@ img {
 
 .activities {
   padding-top: 0;
+  display: flex;
+  justify-content: center;
 }
 
 .activities-list {
@@ -254,7 +255,7 @@ img {
   background-color: var(--team-background-color);
   width: 1600px;
   justify-content: center;
-  margin-left: -230px;
+  margin-left: -215px;
 }
 
 .team-list {
@@ -262,11 +263,16 @@ img {
   justify-content: center;
 }
 
+.team-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .team-list-item-figure {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
   0px 1px 1px rgba(0, 0, 0, 0.14),
   0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  margin: 0;
 }
 
 .team-caption {
@@ -403,25 +409,29 @@ img {
 }
 
 .images {
-  margin-left: -60px;
+  display: flex;
   padding-top: 0;
+  justify-content: center;
 }
 
 .images-list {
   display: flex;
   flex-wrap: wrap;
-  width: 1170px;
+  margin-right: -30px;
+  margin-top: -30px;
+  justify-content: center;
 }
 
 .images-list-item {
-  flex-basis: calc(100% / 3);
-  min-width: 370px;
+  margin-right: 30px;
+  margin-top: 30px;
+  flex-basis: calc(100% / 3 - 30px);
 }
 
 
 
 .images-list-item-figure {
-  min-width: 370px;
+  margin: 0;
 }
 
 .images-caption-title {
