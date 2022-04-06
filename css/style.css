@@ -412,6 +412,8 @@ img {
   display: flex;
   padding-top: 0;
   justify-content: center;
+  max-width: 1170px;
+  margin-left: -30px;
 }
 
 .images-list {
@@ -420,6 +422,7 @@ img {
   margin-right: -30px;
   margin-top: -30px;
   justify-content: center;
+  max-width: 1170px;
 }
 
 .images-list-item {
@@ -427,6 +430,11 @@ img {
   margin-top: 30px;
   flex-basis: calc(100% / 3 - 30px);
 }
+
+.images-list-item:nth-of-type(3n) {
+  margin-right: 0;
+}
+
 
 
 
