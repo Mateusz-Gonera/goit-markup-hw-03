@@ -86,8 +86,10 @@ img {
 
 /* HEADER */
 
-.main-header .container {
-  width: 1600px;
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
 }
 
 .navigation {
@@ -97,7 +99,6 @@ img {
   padding-top: 24px;
   padding-bottom: 24px;
   border-bottom: 1px solid var(--menu-border-color);
-  width: 1170px;
   margin: 0 auto;
 }
 
@@ -167,12 +168,12 @@ img {
   margin: 0 auto;
   width: 1600px;
   padding: 200px 452px;
-  margin-left: -15px;
 }
 
 .head {
   padding: 0;
 }
+
 
 
 .head-one {
@@ -183,6 +184,7 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--third-color);
+  white-space: pre;
 }
 
 .head .head-one {
@@ -216,7 +218,6 @@ img {
 
 .advantages-list {
   display: flex;
-  width: 1170px;
   justify-content: center;
 }
 
@@ -250,12 +251,11 @@ img {
 }
 
 /* Nasz zespół */
+
 .team {
-  display: flex;
   background-color: var(--team-background-color);
   width: 1600px;
-  justify-content: center;
-  margin-left: -215px;
+  margin: 0 auto;
 }
 
 .team-list {
@@ -321,6 +321,7 @@ img {
   color: var(--third-color);
   padding-left: 200px;
   padding-bottom: 60px;
+  white-space: pre;
 }
 
 .address-mail,
@@ -338,6 +339,11 @@ img {
 .address-phone:hover,
 .address-phone:focus {
   color: var(--decorative-color);
+}
+
+.address-span:not(:last-child) {
+  display: inline-block;
+  margin-bottom: 9px;
 }
 
 .logo-footer {
@@ -412,7 +418,7 @@ img {
   display: flex;
   padding-top: 0;
   justify-content: center;
-  max-width: 1170px;
+  max-width: 1200px;
   margin-left: -30px;
 }
 
@@ -422,7 +428,7 @@ img {
   margin-right: -30px;
   margin-top: -30px;
   justify-content: center;
-  max-width: 1170px;
+  max-width: 1200px;
 }
 
 .images-list-item {
