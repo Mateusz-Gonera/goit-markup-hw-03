@@ -165,7 +165,6 @@ img {
 /* header */
 .head .container {
   background-color: var(--background-color);
-  margin: 0 auto;
   width: 1600px;
   padding: 200px 0;
 }
